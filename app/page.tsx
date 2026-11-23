@@ -18,7 +18,7 @@ export default function HomePage() {
             El aire de Lima, entre el mar y los cerros
           </h1>
           <p className="mt-4 text-lg text-pretty text-muted-foreground">
-            {site.name} desarrollo un perfilador atmosférico para medir los vientos, las partículas suspendidas, y variables meteorologicas complementarias para modelar la atmosféra 
+            {site.name} ha desarrollado un perfilador atmosférico para medir los vientos, las partículas suspendidas, y variables meteorologicas para modelar la atmosféra 
             con un precisión sin precedentes en Lima y Callao, para estudiar la dinámica de la atmosfera y la calidad del aire que se respira.            
           </p>
           <div className="mt-6 flex flex-col gap-2 sm:flex-row">
