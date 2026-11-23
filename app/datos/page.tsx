@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function DatosPage() {
   return (
     <>
-      <div className="border-b border-[#e4d2a8] bg-[#f8f1df] px-4 py-2.5 text-sm text-[#5c4314]">
+      <div className="border-b border-white/15 bg-black px-4 py-2.5 text-sm text-neutral-300">
         <p className="mx-auto max-w-6xl">
           <strong>{site.disclaimer}</strong>
           <span className="hidden sm:inline">

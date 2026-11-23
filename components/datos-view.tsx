@@ -122,10 +122,10 @@ export function DatosView() {
               if (id === "drone") setFollow(true);
             }}
           />
-          <div className="absolute top-3 right-3 z-[500] max-w-[12rem] rounded-lg border border-white/10 bg-pacific/90 px-3 py-2 text-mist shadow-sm">
-            <p className="text-[10px] tracking-[0.14em] uppercase text-mist/70">Dron</p>
+          <div className="absolute top-3 right-3 z-[500] max-w-[12rem] rounded-lg border border-white/15 bg-black/85 px-3 py-2 text-white shadow-sm">
+            <p className="text-[10px] tracking-[0.14em] text-neutral-400 uppercase">Dron</p>
             <p className="font-mono text-lg tabular-nums">{snapshot.drone.altitude} m</p>
-            <p className="text-xs text-mist/80">
+            <p className="text-xs text-neutral-300">
               PM2.5{" "}
               {snapshot.drone.reading ? formatNum(snapshot.drone.reading.pm25) : "—"} µg/m³ ·{" "}
               {snapshot.drone.segment}

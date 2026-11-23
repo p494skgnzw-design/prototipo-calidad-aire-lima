@@ -17,10 +17,10 @@ import type { SeriesPayload } from "@/lib/types";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend, Filler);
 
-const INK = "#0F4C5C";
-const COPPER = "#B86A3D";
-const TEAL = "#2A6F7F";
-const CLAY = "#7A3E2E";
+const INK = "#f5f5f5";
+const COPPER = "#c4c4c4";
+const TEAL = "#8d8d8d";
+const CLAY = "#e8e8e8";
 
 export function ReadingCharts({ series }: { series: SeriesPayload }) {
   const labels = useMemo(
@@ -40,7 +40,7 @@ export function ReadingCharts({ series }: { series: SeriesPayload }) {
             boxWidth: 10,
             boxHeight: 10,
             font: { size: 11 },
-            color: "#14232c",
+            color: "#f5f5f5",
           },
         },
         tooltip: {
@@ -55,16 +55,16 @@ export function ReadingCharts({ series }: { series: SeriesPayload }) {
       },
       scales: {
         x: {
-          ticks: { maxTicksLimit: 6, color: "#4c616b", font: { size: 10 } },
-          grid: { color: "rgba(20,35,44,0.06)" },
+          ticks: { maxTicksLimit: 6, color: "#a3a3a3", font: { size: 10 } },
+          grid: { color: "rgba(255,255,255,0.08)" },
         },
         y: {
           ticks: {
-            color: "#4c616b",
+            color: "#a3a3a3",
             font: { size: 10 },
             callback: (value: string | number) => formatNum(Number(value), 0),
           },
-          grid: { color: "rgba(20,35,44,0.06)" },
+          grid: { color: "rgba(255,255,255,0.08)" },
         },
       },
     }),
@@ -118,7 +118,7 @@ function line(
     label,
     data: series.points.map((point) => point[key]),
     borderColor: color,
-    backgroundColor: fill ? "rgba(15,76,92,0.12)" : color,
+    backgroundColor: fill ? "rgba(255,255,255,0.08)" : color,
     pointRadius: 0,
     borderWidth: 1.6,
     tension: 0.25,

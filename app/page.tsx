@@ -30,7 +30,7 @@ export default function HomePage() {
               <Link href="/lineas">Líneas de investigación</Link>
             </Button>
           </div>
-          <p className="mt-4 text-sm text-amber-900">{site.disclaimer}.</p>
+          <p className="mt-4 text-sm text-neutral-400">{site.disclaimer}.</p>
         </div>
         <HeroFigure />
       </section>
