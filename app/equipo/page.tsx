@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Equipo",
-  description: `Plazas previstas de ${site.name}. Los nombres todavía no están asignados.`,
+  description: `Plazas de ${site.name}.`,
 };
 
 export default function EquipoPage() {
@@ -14,8 +14,8 @@ export default function EquipoPage() {
     <>
       <PageHeader
         eyebrow="Personas"
-        title="Equipo por designar"
-        lede="El grupo todavía no tiene nombre definitivo ni nómina. Estas fichas reservan las funciones que harían falta para operar la red y el dron. No representan a personas reales."
+        title="Equipo de Científicos en Ingenieros"
+        lede="El grupo de profesionales avocados a funciones especificas."
       />
       <div className="mx-auto grid max-w-6xl gap-4 px-4 py-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
         {team.map((person) => (
