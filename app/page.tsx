@@ -45,14 +45,12 @@ export default function HomePage() {
               El desarrollo urbano e industrial requiere información meteorológica detallada y oportuna para adaptarse al medio y
               reducir los impactos al medio ambiente y a la salud de los habitantes. Uno de los mayores impactos es en la calidad del
               aire. Ante ello una meteorología digital detallada permite conocer cómo el viento transporta las partículas finas
-              generadas en construcción, chimeneas, fundiciones, entre otros y que son inhaladas por las personas. El impacto de la
-              deposición de estos contaminantes en las vías respiratorias es relevante para la salud ambiental y las políticas públicas
-              (OMS, 2024)              
+              generadas en construcción, chimeneas, fundiciones, entre otros y que son inhaladas por las personas.
             </p>
             <p className="mt-3 text-pretty text-muted-foreground">
               Esta web es el prototipo de una meteorología digital. Los números se simulan en el servidor
               para poder diseñar la red, el mapa y la ingesta antes de tener instrumentos en la
-              azotea. Cuando llegue un sensor real, su lectura reemplaza a la simulada.
+              azotea. Cuando lleguen las mediciones y salidas de los modelos, su lectura reemplaza a la simulada.
             </p>
           </div>
           <dl className="grid grid-cols-2 gap-3">
