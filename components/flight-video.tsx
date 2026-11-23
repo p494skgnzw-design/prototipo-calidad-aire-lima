@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const videoSrc = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/video/vuelo-dron.mp4`;
+const videoSrc = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/video/vuelo-drone.mp4`;
 
 export function FlightVideo() {
   const [missing, setMissing] = useState(false);
@@ -13,7 +13,7 @@ export function FlightVideo() {
         <div className="flex aspect-video items-center px-6 text-sm text-neutral-300">
           <p>
             El video del vuelo todavía no está en el sitio. Súbelo al repositorio con el nombre{" "}
-            <span className="font-mono text-white">public/video/vuelo-dron.mp4</span>.
+            <span className="font-mono text-white">public/video/vuelo-drone.mp4</span>.
           </p>
         </div>
       ) : (
