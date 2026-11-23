@@ -20,8 +20,11 @@ export function SiteFooter() {
           <a href={`mailto:${site.email}`} className="mt-2 text-mist/85 hover:text-white">
             {site.email}
           </a>
-          <a href="/api/descarga" className="text-amber-100 hover:text-white">
-            Descargar código (zip)
+          <a
+            href="https://github.com/p494skgnzw-design/prototipo-calidad-aire-lima"
+            className="text-amber-100 hover:text-white"
+          >
+            Código en GitHub
           </a>
         </div>
       </div>

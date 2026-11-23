@@ -22,6 +22,8 @@ npm run start
 
 Copie [`.env.example`](.env.example) a `.env.local` si quiere un token de ingesta o otro intervalo.
 
+La copia pública está en GitHub Pages: [p494skgnzw-design.github.io/prototipo-calidad-aire-lima](https://p494skgnzw-design.github.io/prototipo-calidad-aire-lima/). Ahí el navegador calcula la simulación. La ingesta de sensores (`POST /api/ingest`) solo existe cuando el sitio corre con `npm run dev` o `npm run start`.
+
 ## Qué hay en el sitio
 
 | Ruta | Contenido |

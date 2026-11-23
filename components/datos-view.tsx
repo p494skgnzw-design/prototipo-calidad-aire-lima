@@ -1,11 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { LiveMap, MapLegend } from "@/components/live-map";
 import { ReadingCharts } from "@/components/reading-charts";
 import { useLiveSnapshot } from "@/components/use-live";
 import { Button } from "@/components/ui/button";
 import { formatNum, formatTime } from "@/lib/format";
+import { staticSite } from "@/lib/runtime";
+import { buildSeries } from "@/lib/simulator";
 import { site } from "@/lib/site";
 import type { SeriesPayload, StationSnapshot } from "@/lib/types";
 
@@ -17,8 +19,15 @@ export function DatosView() {
   const [seriesError, setSeriesError] = useState(false);
   const panelRef = useRef<HTMLDivElement | null>(null);
 
+  const seriesBucket = snapshot ? Math.floor(snapshot.serverTime / 20000) : 0;
+  const localSeries = useMemo(() => {
+    if (!staticSite || !selectedId || seriesBucket === 0) return null;
+    return buildSeries(selectedId, 3, seriesBucket * 20000);
+  }, [selectedId, seriesBucket]);
+  const shownSeries = staticSite ? localSeries : series;
+
   useEffect(() => {
-    if (!selectedId || !snapshot) return;
+    if (staticSite || !selectedId || !snapshot) return;
     const controller = new AbortController();
     const requested = selectedId;
     fetch(`/api/series?id=${encodeURIComponent(requested)}&hours=3`, { signal: controller.signal })
@@ -211,8 +220,9 @@ export function DatosView() {
               <div className="mt-4">
                 {seriesError ? (
                   <p className="text-sm text-destructive">No se pudo cargar la serie. Se reintentará.</p>
-                ) : series && series.id === (selectedId === "drone" ? "drone" : selectedId) ? (
-                  <ReadingCharts series={series} />
+                ) : shownSeries &&
+                  shownSeries.id === (selectedId === "drone" ? "drone" : selectedId) ? (
+                  <ReadingCharts series={shownSeries} />
                 ) : (
                   <p className="text-sm text-muted-foreground">Cargando serie…</p>
                 )}

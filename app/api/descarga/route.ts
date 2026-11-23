@@ -14,7 +14,7 @@ export async function GET() {
   } catch {
     return Response.json({ error: "El archivo zip no está en este servidor." }, { status: 404 });
   }
-  return new Response(file, {
+  return new Response(new Uint8Array(file), {
     headers: {
       "Content-Type": "application/zip",
       "Content-Disposition": 'attachment; filename="prototipo-gia-lima.zip"',

@@ -6,6 +6,7 @@
     "dev": "next dev -H 0.0.0.0 -p 3847",
     "start": "next start -H 0.0.0.0 -p 3847",
     "build": "next build",
+    "build:pages": "node scripts/build-pages.mjs",
     "lint": "eslint"
   },
   "dependencies": {
