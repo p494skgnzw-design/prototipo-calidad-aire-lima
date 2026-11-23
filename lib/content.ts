@@ -40,14 +40,14 @@ export const lines = [
     title: "Drones y perfiles verticales",
     summary:
       "Un transecto entre la Costa Verde y Ate, con ascensos y descensos en los primeros 200 metros.",
-    body: "La pregunta es si el material particulado se queda debajo de la inversión de la capa marina o si se mezcla al subir. El dron de este prototipo recorre un circuito Miraflores–San Isidro–San Borja–La Molina–Ate y vuelve por Surco y Barranco. La altitud oscila entre unos 55 m y 200 m, dos veces por vuelta, para un perfil vertical a lo largo del mismo recorrido horizontal. La velocidad que se ve en el mapa está acelerada, para que el movimiento sea visible; un multirrotor de campaña iría cerca de 12 m/s.",
+    body: "Como el viento transporta el material particulado. El dron de este prototipo recorre un circuito Miraflores–San Isidro–San Borja–La Molina–Ate y vuelve por Surco y Barranco. La altitud oscila entre unos 55 m y 200 m, dos veces por vuelta, para un perfil vertical a lo largo del mismo recorrido horizontal. La velocidad que se ve en el mapa está acelerada, para que el movimiento sea visible; un multirrotor de campaña iría cerca de 12 m/s.",
   },
   {
     id: "sensores",
     numeral: "02",
-    title: "Sensores meteorológicos y de gases",
+    title: "Sensores meteorológicos y captura de partículas finas",
     summary:
-      "Temperatura, humedad, ozono y dióxido de nitrógeno junto a las partículas.",
+      "Temperatura, presión y humedadad relativa, vector de vientos y partículas finas",
     body: "El ozono en Lima suele subir hacia el mediodía, cuando hay sol, y el dióxido de nitrógeno acompaña el tráfico de la mañana y de la tarde. La humedad alta de la costa importa porque cambia cómo se comportan los sensores de bajo costo. Este prototipo genera esas variables con un ciclo diurno plausible. No hay calibración contra un instrumento de referencia: eso queda como trabajo de campo, no como un resultado de esta página.",
   },
   {
@@ -88,7 +88,7 @@ export const projects = [
 
 export const publications = [
   {
-    title: "Perfil vertical de PM2.5 sobre la costa de Lima: ficha de ejemplo",
+    title: "Modelo LES CM1",
     authors: "Autor/a, A.; Autor/a, B.",
     venue: "Revista por confirmar",
     year: 2026,
