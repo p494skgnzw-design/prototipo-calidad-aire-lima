@@ -14,8 +14,8 @@ export default function EquipoPage() {
     <>
       <PageHeader
         eyebrow="Personas"
-        title="Equipo de Científicos en Ingenieros"
-        lede="El grupo de profesionales avocados a funciones especificas."
+        title="Equipo de Ingenieros"
+        lede="El grupo de desarrollo e investigación."
       />
       <div className="mx-auto grid max-w-6xl gap-4 px-4 py-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
         {team.map((person) => (
