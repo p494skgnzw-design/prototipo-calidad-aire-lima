@@ -15,11 +15,11 @@ export default function HomePage() {
             Red piloto · {site.city}
           </p>
           <h1 className="mt-3 text-4xl tracking-tight text-balance text-pacific sm:text-5xl">
-            El aire de Lima, entre el mar y los cerros
+             Drones y modelos atmosféricos
           </h1>
           <p className="mt-4 text-lg text-pretty text-muted-foreground">
-            {site.name} ha desarrollado un perfilador atmosférico para medir los vientos, las partículas suspendidas, y variables meteorologicas para modelar la atmosféra 
-            con un precisión sin precedentes en Lima y Callao, para estudiar la dinámica de la atmosfera y la calidad del aire que se respira.            
+            {site.name} ha desarrollado un perfilador atmosférico para medir vientos, partículas finas y variables meteorologicas. Con esa información se modela la atmosféra 
+            a muy alta resolución en Lima y Callao para el pronostico del tiempo y la calidad del aire.            
           </p>
           <div className="mt-6 flex flex-col gap-2 sm:flex-row">
             <Button asChild className="h-10 px-4">
