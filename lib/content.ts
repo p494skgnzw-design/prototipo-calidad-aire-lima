@@ -3,33 +3,33 @@ import { site } from "./site";
 export const team = [
   {
     role: "Dirección científica",
-    focus: "Diseño de la red y preguntas sobre la capa límite de Lima.",
-    status: "Por designar",
+    focus: "Planeamiento de mediciones y Modelamiento Atmosférico",
+    status: "Steven P. Chavez Ph.D.",
   },
   {
     role: "Calidad del aire",
-    focus: "Partículas finas, gases y cómo se comparan los distritos.",
-    status: "Por designar",
+    focus: "Química de Partículas finas y montaje de sensores.",
+    status: "Leonardo Lopez",
   },
   {
     role: "Instrumentación y drones",
-    focus: "Perfiles verticales, plan de vuelo y bitácora del dron.",
+    focus: "Plan de vuelo y montaje de sensores.",
     status: "Por designar",
   },
   {
     role: "Meteorología",
-    focus: "Temperatura, humedad y la brisa que entra desde el Pacífico.",
-    status: "Por designar",
+    focus: "Temperatura, humedad relativa, presión en Lima y Callao.",
+    status: "Lucero Bocanegra",
   },
   {
     role: "Datos",
-    focus: "Series de tiempo, control de calidad y el índice orientativo.",
-    status: "Por designar",
+    focus: "Perfiles verticales, control de calidad , procesamiento de datos y repositorios.",
+    status: "Joaquin Lopez",
   },
   {
     role: "Operación de campo",
-    focus: "Instalación de estaciones, energía y visitas de mantenimiento.",
-    status: "Por designar",
+    focus: "Vuelo del dron.",
+    status: "Will Smith",
   },
 ];
 
