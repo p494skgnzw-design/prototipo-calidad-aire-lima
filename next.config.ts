@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
         trailingSlash: true,
       }
     : {}),
+  env: {
+    NEXT_PUBLIC_BASE_PATH: pages ? "/prototipo-calidad-aire-lima" : "",
+  },
   images: { unoptimized: true },
   // El servidor escucha en 0.0.0.0; el navegador entra por 127.0.0.1.
   allowedDevOrigins: ["127.0.0.1"],

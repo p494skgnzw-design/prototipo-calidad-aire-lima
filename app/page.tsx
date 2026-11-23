@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HeroFigure } from "@/components/hero-figure";
+import { FlightVideo } from "@/components/flight-video";
 import { LiveStrip } from "@/components/live-strip";
 import { Button } from "@/components/ui/button";
 import { lines, parameters } from "@/lib/content";
@@ -31,7 +31,7 @@ export default function HomePage() {
           </div>
           <p className="mt-4 text-sm text-neutral-400">{site.disclaimer}.</p>
         </div>
-        <HeroFigure />
+        <FlightVideo />
       </section>
 
       <LiveStrip />
