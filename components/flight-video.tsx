@@ -35,7 +35,7 @@ export function FlightVideo() {
   }, [missing]);
 
   return (
-    <figure className="w-full bg-black lg:h-full">
+    <figure className="w-full self-center bg-black">
       {missing ? (
         <div className="flex aspect-video items-center px-6 text-sm text-neutral-300">
           <p>

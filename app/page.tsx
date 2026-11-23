@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export default function HomePage() {
   return (
     <>
-      <section className="lg:grid lg:min-h-[80vh] lg:grid-cols-2 lg:items-center">
+      <section className="lg:grid lg:grid-cols-2 lg:items-center">
         <div className="px-4 py-12 sm:px-6 lg:px-12 lg:py-16">
           <p className="text-xs font-semibold tracking-[0.18em] text-primary uppercase">
             Sistema de mediciones móvil · {site.city}
