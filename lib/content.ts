@@ -9,12 +9,12 @@ export const team = [
   {
     role: "Calidad del aire",
     focus: "Química de Partículas finas y montaje de sensores.",
-    status: "Leonardo Lopez",
+    status: "Leonarddo Lopez",
   },
   {
     role: "Instrumentación y drones",
     focus: "Plan de vuelo y montaje de sensores.",
-    status: "Por designar",
+    status: "Rafael Salmavides",
   },
   {
     role: "Meteorología",
