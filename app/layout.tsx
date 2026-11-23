@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "@fontsource/barlow/400.css";
 import "@fontsource/barlow/500.css";
-import "@fontsource/barlow-condensed/500.css";
-import "@fontsource/barlow-condensed/600.css";
+import "@fontsource/barlow-semi-condensed/500.css";
+import "@fontsource/barlow-semi-condensed/600.css";
 import "@fontsource/ibm-plex-mono/400.css";
 import "@fontsource/ibm-plex-mono/500.css";
 import { SiteFooter } from "@/components/site-footer";
