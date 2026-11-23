@@ -104,7 +104,7 @@ export const publications = [
     example: true,
   },
   {
-    title: "Notas de calibración de un sensor de NO2 en humedad alta",
+    title: "Notas de red de monitoreo en Lima durante El Niño 2026-2027",
     authors: "Autor/a, F.",
     venue: "Informe técnico interno",
     year: 2026,
