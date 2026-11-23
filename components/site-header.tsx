@@ -21,17 +21,17 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/80 bg-card/90 backdrop-blur-md">
       <div className="h-px bg-white/80" />
-      <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3 sm:px-6">
-        <Link href="/" className="flex min-w-0 items-center gap-2.5">
+      <div className="flex w-full items-center gap-6 px-4 py-3 sm:gap-10 sm:px-8 lg:px-10">
+        <Link href="/" className="flex shrink-0 items-center gap-2.5">
           <LogoMark />
-          <span className="min-w-0 leading-tight">
+          <span className="leading-tight">
             <span className="block font-heading text-2xl tracking-[0.08em] text-pacific uppercase">{site.shortName}</span>
-            <span className="hidden max-w-[16rem] truncate text-[11px] text-muted-foreground sm:block">
+            <span className="hidden max-w-[18rem] text-[11px] leading-snug font-bold text-muted-foreground lg:block">
               {site.name}
             </span>
           </span>
         </Link>
-        <nav className="ml-auto hidden items-center gap-1 lg:flex">
+        <nav className="hidden min-w-0 flex-1 items-center justify-between lg:flex">
           {nav.map((item) => {
             const current = active(pathname, item.href);
             return (
@@ -40,10 +40,10 @@ export function SiteHeader() {
                 href={item.href}
                 aria-current={current ? "page" : undefined}
                 className={cn(
-                  "rounded-full px-2.5 py-1.5 text-[11px] font-medium tracking-[0.12em] text-foreground/80 uppercase hover:text-foreground",
-                  current && item.href !== "/datos" && "bg-secondary font-medium text-foreground",
-                  item.href === "/datos" && "bg-primary text-primary-foreground hover:text-primary-foreground",
-                  current && item.href === "/datos" && "ring-2 ring-copper ring-offset-2 ring-offset-card",
+                  "px-1 py-1.5 text-center text-[12px] font-bold tracking-[0.06em] whitespace-nowrap text-foreground uppercase hover:text-white",
+                  current && item.href !== "/datos" && "text-white underline decoration-white/80 underline-offset-8",
+                  item.href === "/datos" && "rounded-full bg-primary px-3 text-primary-foreground hover:text-primary-foreground",
+                  current && item.href === "/datos" && "ring-2 ring-white ring-offset-2 ring-offset-black",
                 )}
               >
                 {item.label}
@@ -66,14 +66,14 @@ export function SiteHeader() {
       </div>
       {open ? (
         <nav id="menu-movil" className="border-t border-border bg-card lg:hidden">
-          <div className="mx-auto flex max-w-6xl flex-col px-4 py-1">
+          <div className="flex flex-col px-4 py-1 sm:px-8">
             {nav.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "border-b border-border/70 py-3 text-base",
-                  active(pathname, item.href) && "font-semibold text-primary",
+                  "border-b border-border/70 py-3 text-base font-bold",
+                  active(pathname, item.href) && "text-primary",
                 )}
               >
                 {item.label}
