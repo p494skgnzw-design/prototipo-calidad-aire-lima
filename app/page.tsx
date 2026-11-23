@@ -12,14 +12,14 @@ export default function HomePage() {
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:py-16">
         <div>
           <p className="text-xs font-semibold tracking-[0.18em] text-primary uppercase">
-            Red piloto · {site.city}
+            Sistema Móvil · {site.city}
           </p>
           <h1 className="mt-3 text-4xl tracking-tight text-balance text-pacific sm:text-5xl">
-             Drones y modelos atmosféricos
+             Pronóstico del tiempo y calidad del aire
           </h1>
           <p className="mt-4 text-lg text-pretty text-muted-foreground">
-            {site.name} ha desarrollado un perfilador atmosférico para medir vientos, partículas finas y variables meteorologicas. Con esa información se modela la atmosféra 
-            a muy alta resolución en Lima y Callao para el pronostico del tiempo y la calidad del aire.            
+            {site.name} ha desarrollado un perfilador atmosférico para medir vientos, partículas finas y variables meteorologicas en drones. Con esa información se modela la atmosféra 
+            a muy alta resolución en Lima y Callao para el pronóstico del tiempo y calidad del aire.            
           </p>
           <div className="mt-6 flex flex-col gap-2 sm:flex-row">
             <Button asChild className="h-10 px-4">
@@ -41,13 +41,16 @@ export default function HomePage() {
           <div>
             <h2 className="text-3xl tracking-tight text-pacific">Para qué existe el grupo</h2>
             <p className="mt-4 text-pretty text-muted-foreground">
-              Lima respira una capa de aire húmedo que entra del Pacífico y, tierra adentro, se
-              mezcla con el tráfico y el polvo de los distritos del este y del norte. Queremos
-              describir ese contraste con mediciones propias, no con un tablero genérico: dónde
-              está cada estación, a qué altura vuela el dron y qué tan fresca es la última lectura.
+
+              El desarrollo urbano e industrial requiere información meteorológica detallada y oportuna para adaptarse al medio y
+              reducir los impactos al medio ambiente y a la salud de los habitantes. Uno de los mayores impactos es en la calidad del
+              aire. Ante ello una meteorología digital detallada permite conocer cómo el viento transporta las partículas finas
+              generadas en construcción, chimeneas, fundiciones, entre otros y que son inhaladas por las personas. El impacto de la
+              deposición de estos contaminantes en las vías respiratorias es relevante para la salud ambiental y las políticas públicas
+              (OMS, 2024)              
             </p>
             <p className="mt-3 text-pretty text-muted-foreground">
-              Esta web es el prototipo de ese observatorio. Los números se simulan en el servidor
+              Esta web es el prototipo de una meteorología digital. Los números se simulan en el servidor
               para poder diseñar la red, el mapa y la ingesta antes de tener instrumentos en la
               azotea. Cuando llegue un sensor real, su lectura reemplaza a la simulada.
             </p>
