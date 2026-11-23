@@ -21,7 +21,7 @@ export default function ProyectosPage() {
         {projects.map((project, index) => (
           <li key={project.title} className="rounded-xl border border-border bg-card px-5 py-5">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <h2 className="text-2xl text-pacific">
+              <h2 className="text-3xl text-pacific sm:text-4xl">
                 <span className="mr-2 font-mono text-sm text-copper">0{index + 1}</span>
                 {project.title}
               </h2>

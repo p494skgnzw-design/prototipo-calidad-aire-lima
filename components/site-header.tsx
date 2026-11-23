@@ -25,7 +25,7 @@ export function SiteHeader() {
         <Link href="/" className="flex min-w-0 items-center gap-2.5">
           <LogoMark />
           <span className="min-w-0 leading-tight">
-            <span className="block font-heading text-lg tracking-tight text-pacific">{site.shortName}</span>
+            <span className="block font-heading text-2xl tracking-[0.08em] text-pacific uppercase">{site.shortName}</span>
             <span className="hidden max-w-[16rem] truncate text-[11px] text-muted-foreground sm:block">
               {site.name}
             </span>
@@ -40,7 +40,7 @@ export function SiteHeader() {
                 href={item.href}
                 aria-current={current ? "page" : undefined}
                 className={cn(
-                  "rounded-full px-2.5 py-1.5 text-[13px] text-foreground/80 hover:text-foreground",
+                  "rounded-full px-2.5 py-1.5 text-[11px] font-medium tracking-[0.12em] text-foreground/80 uppercase hover:text-foreground",
                   current && item.href !== "/datos" && "bg-secondary font-medium text-foreground",
                   item.href === "/datos" && "bg-primary text-primary-foreground hover:text-primary-foreground",
                   current && item.href === "/datos" && "ring-2 ring-copper ring-offset-2 ring-offset-card",

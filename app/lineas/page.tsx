@@ -20,7 +20,7 @@ export default function LineasPage() {
         {lines.map((line) => (
           <article key={line.id} id={line.id} className="scroll-mt-28 border-t-2 border-copper pt-6">
             <p className="font-mono text-xs text-copper">{line.numeral}</p>
-            <h2 className="mt-2 text-3xl text-pacific">{line.title}</h2>
+            <h2 className="mt-2 text-4xl text-pacific sm:text-5xl">{line.title}</h2>
             <p className="mt-4 max-w-3xl text-pretty text-muted-foreground">{line.body}</p>
           </article>
         ))}

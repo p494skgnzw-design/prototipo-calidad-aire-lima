@@ -14,8 +14,8 @@ export default function HomePage() {
           <p className="text-xs font-semibold tracking-[0.18em] text-primary uppercase">
             Sistema de mediciones móvil · {site.city}
           </p>
-          <h1 className="mt-3 text-4xl tracking-tight text-balance text-pacific sm:text-5xl">
-             Pronóstico del tiempo y calidad del aire
+          <h1 className="mt-3 max-w-4xl text-5xl leading-[0.9] text-balance text-pacific sm:text-7xl">
+            Pronóstico del tiempo y calidad del aire
           </h1>
           <p className="mt-4 text-lg text-pretty text-muted-foreground">
             En {site.name} hemos desarrollado un perfilador atmosférico para medir vientos, partículas finas y variables meteorologicas con sensores especializados montados en drones. Con esa información se modela la atmosféra 
@@ -39,7 +39,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <h2 className="text-3xl tracking-tight text-pacific">Para qué existe el grupo</h2>
+            <h2 className="text-4xl text-pacific sm:text-5xl">Para qué existe el grupo</h2>
             <p className="mt-4 text-pretty text-muted-foreground">
 
               El desarrollo urbano e industrial requiere información meteorológica detallada y oportuna para adaptarse al medio y
@@ -63,7 +63,7 @@ export default function HomePage() {
               ["30 min", "entre cada actualización del mapa"],
             ].map(([value, label]) => (
               <div key={label} className="rounded-xl border border-border bg-card px-4 py-4">
-                <dt className="font-heading text-3xl text-pacific">{value}</dt>
+                <dt className="font-heading text-5xl text-pacific">{value}</dt>
                 <dd className="mt-1 text-sm text-muted-foreground">{label}</dd>
               </div>
             ))}
@@ -73,12 +73,12 @@ export default function HomePage() {
 
       <section className="border-y border-border bg-card/50">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-          <h2 className="text-3xl tracking-tight text-pacific">Tres líneas</h2>
+          <h2 className="text-4xl text-pacific sm:text-5xl">Tres líneas</h2>
           <div className="mt-8 grid gap-6 lg:grid-cols-3">
             {lines.map((line) => (
               <article key={line.id} className="border-t-2 border-copper pt-4">
                 <p className="font-mono text-xs text-copper">{line.numeral}</p>
-                <h3 className="mt-2 text-2xl text-pacific">
+                <h3 className="mt-2 text-3xl text-pacific">
                   <Link href={`/lineas#${line.id}`} className="hover:underline">
                     {line.title}
                   </Link>
@@ -92,7 +92,7 @@ export default function HomePage() {
 
       <section className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2">
         <div>
-          <h2 className="text-3xl tracking-tight text-pacific">Qué se mide</h2>
+          <h2 className="text-4xl text-pacific sm:text-5xl">Qué se mide</h2>
           <table className="mt-4 w-full text-sm">
             <thead className="text-left text-xs tracking-wide text-muted-foreground uppercase">
               <tr>
@@ -113,7 +113,7 @@ export default function HomePage() {
           </table>
         </div>
         <div>
-          <h2 className="text-3xl tracking-tight text-pacific">Dónde está la red</h2>
+          <h2 className="text-4xl text-pacific sm:text-5xl">Dónde está la red</h2>
           <ul className="mt-4 divide-y divide-border border-y border-border">
             {STATIONS.map((station) => (
               <li key={station.id} className="flex items-baseline justify-between gap-3 py-2 text-sm">

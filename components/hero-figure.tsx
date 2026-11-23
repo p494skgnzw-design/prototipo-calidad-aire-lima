@@ -24,7 +24,7 @@ export function HeroFigure() {
         <circle cx="430" cy="168" r="5" fill="#F08A24" />
         <circle cx="575" cy="128" r="5" fill="#E23B3B" />
         <path d="M560 118 l8 6 -8 1.2 -2.2 6.2 -3.2-7.4z" fill="#f5f5f5" />
-        <g fill="#e5e5e5" fontFamily="Source Sans 3, sans-serif" fontSize="13">
+        <g fill="#e5e5e5" fontFamily="Barlow, sans-serif" fontSize="14">
           <text x="28" y="42">Pacífico</text>
           <text x="250" y="42">Lima</text>
           <text x="520" y="42">Este, más seco</text>

@@ -22,7 +22,7 @@ export default function PublicacionesPage() {
             <p className="text-xs font-semibold tracking-wide text-copper uppercase">
               Ficha de ejemplo · {item.year}
             </p>
-            <h2 className="mt-2 text-2xl text-balance text-pacific">{item.title}</h2>
+            <h2 className="mt-2 text-3xl text-balance text-pacific sm:text-4xl">{item.title}</h2>
             <p className="mt-2 text-sm">{item.authors}</p>
             <p className="text-sm text-muted-foreground">
               {item.venue}, {item.year}
