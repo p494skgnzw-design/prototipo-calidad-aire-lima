@@ -1,14 +1,41 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const videoSrc = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/video/vuelo-drone.mp4`;
 
 export function FlightVideo() {
+  const videoRef = useRef<HTMLVideoElement>(null);
   const [missing, setMissing] = useState(false);
 
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video || missing) return;
+
+    video.muted = true;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const play = () => {
+      if (reducedMotion || video.ended) return;
+      void video.play().catch(() => undefined);
+    };
+    const pause = () => {
+      video.pause();
+    };
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) play();
+        else pause();
+      },
+      { threshold: 0.55 },
+    );
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, [missing]);
+
   return (
-    <figure className="overflow-hidden rounded-2xl border border-white/10 bg-black">
+    <figure className="w-full bg-black lg:h-full">
       {missing ? (
         <div className="flex aspect-video items-center px-6 text-sm text-neutral-300">
           <p>
@@ -18,22 +45,17 @@ export function FlightVideo() {
         </div>
       ) : (
         <video
-          className="aspect-video w-full bg-black object-cover"
+          ref={videoRef}
+          className="block h-auto w-full bg-black"
           src={videoSrc}
-          controls
           playsInline
           muted
-          loop
-          autoPlay
           preload="metadata"
           onError={() => setMissing(true)}
         >
           Este navegador no puede reproducir el video.
         </video>
       )}
-      <figcaption className="border-t border-white/10 px-4 py-3 text-sm text-neutral-400">
-        Vuelo del dron con los sensores.
-      </figcaption>
     </figure>
   );
 }
