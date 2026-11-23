@@ -20,6 +20,9 @@ export function SiteFooter() {
           <a href={`mailto:${site.email}`} className="mt-2 text-mist/85 hover:text-white">
             {site.email}
           </a>
+          <a href="/api/descarga" className="text-amber-100 hover:text-white">
+            Descargar código (zip)
+          </a>
         </div>
       </div>
     </footer>

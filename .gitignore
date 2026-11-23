@@ -40,3 +40,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# copia descargable generada en el servidor
+/public/prototipo-gia-lima.zip
