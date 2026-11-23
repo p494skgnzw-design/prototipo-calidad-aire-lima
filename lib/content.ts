@@ -2,12 +2,12 @@ import { site } from "./site";
 
 export const team = [
   {
-    role: "Dirección científica",
-    focus: "Planeamiento de mediciones y Modelamiento Atmosférico",
-    status: "Steven P. Chavez Ph.D.",
+    role: "Coordinador",
+    focus: "Mediciones y Modelamiento Atmosférico",
+    status: "Dr. Steven P. Chávez",
   },
   {
-    role: "Instrumentación y planeamiento",
+    role: "Instrumentación y vuelos",
     focus: "Diseño de elementos de montaje y despegue de drones, planes de vuelo.",
     status: "Rafael Salmavides",
   },
