@@ -12,14 +12,14 @@ export default function HomePage() {
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:py-16">
         <div>
           <p className="text-xs font-semibold tracking-[0.18em] text-primary uppercase">
-            Sistema Móvil · {site.city}
+            Sistema de mediciones móvil · {site.city}
           </p>
           <h1 className="mt-3 text-4xl tracking-tight text-balance text-pacific sm:text-5xl">
              Pronóstico del tiempo y calidad del aire
           </h1>
           <p className="mt-4 text-lg text-pretty text-muted-foreground">
-            {site.name} ha desarrollado un perfilador atmosférico para medir vientos, partículas finas y variables meteorologicas en drones. Con esa información se modela la atmosféra 
-            a muy alta resolución en Lima y Callao para el pronóstico del tiempo y calidad del aire.            
+            En {site.name} hemos desarrollado un perfilador atmosférico para medir vientos, partículas finas y variables meteorologicas con sensores especializados montados en drones. Con esa información se modela la atmosféra 
+            para obtener el pronóstico del tiempo y calidad del aire.            
           </p>
           <div className="mt-6 flex flex-col gap-2 sm:flex-row">
             <Button asChild className="h-10 px-4">
