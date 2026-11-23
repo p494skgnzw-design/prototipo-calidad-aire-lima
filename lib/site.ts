@@ -8,7 +8,7 @@ export const site = {
   city: "Lima, Perú",
   email: "contacto@green.com.pe",
   description:
-    "Grupo de ingenieros ambientales que miden y estudian la calidad en Lima y Callao con mediciones y modelos",
+    "Grupo de ingenieros ambientales que usan drones para sensar la atmosferá metro a metro, capturan particulas finas y las analizan en laboratorio, y modelan los vientos para estudiar a detalle la calidad en Lima y Callao",
   disclaimer: "Datos preliminares, sin validar",
   drone: {
     id: "gia-d1",
