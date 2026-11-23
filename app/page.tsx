@@ -56,11 +56,11 @@ export default function HomePage() {
             </p>
           </div>
           <dl className="grid grid-cols-2 gap-3">
-            {[
-              ["8", "estaciones fijas en Lima Metropolitana"],
-              ["1", "dron de perfil, circuito costa–este"],
-              ["6", "variables en cada punto"],
-              ["4 s", "entre cada actualización del mapa"],
+            {[              
+              ["6", "Perfiles atmosféricos, por día"],
+              ["7", "variables por perfil"],
+              ["20", "puntos de control en Lima Metropolitana"],
+              ["30 min", "entre cada actualización del mapa"],
             ].map(([value, label]) => (
               <div key={label} className="rounded-xl border border-border bg-card px-4 py-4">
                 <dt className="font-heading text-3xl text-pacific">{value}</dt>
