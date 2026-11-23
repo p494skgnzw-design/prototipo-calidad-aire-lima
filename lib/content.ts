@@ -7,29 +7,29 @@ export const team = [
     status: "Steven P. Chavez Ph.D.",
   },
   {
-    role: "Calidad del aire",
-    focus: "Química de Partículas finas y montaje de sensores.",
+    role: "Instrumentación y planeamiento",
+    focus: "Diseño de elementos de montaje y despegue de drones, planes de vuelo.",
+    status: "Rafael Salmavides",
+  },
+    {
+    role: "Meteorología con drones y química atmosférica",
+    focus: "Perfiles Atmosféricos y análisis químico de partículas finas.",
     status: "Leonarddo Lopez",
   },
   {
-    role: "Instrumentación y drones",
-    focus: "Plan de vuelo y montaje de sensores.",
-    status: "Rafael Salmavides",
-  },
-  {
-    role: "Meteorología",
-    focus: "Temperatura, humedad relativa, presión en Lima y Callao.",
-    status: "Lucero Bocanegra",
-  },
-  {
-    role: "Datos",
-    focus: "Perfiles verticales, control de calidad , procesamiento de datos y repositorios.",
+    role: "Gestor de Datos de drones",
+    focus: "Control de calidad , procesamiento y visualización de datos y manejo de repositorios.",
     status: "Joaquin Lopez",
   },
   {
+    role: "Red meteorologíca en superficie",
+    focus: "Manejo de red, procesamiento y visualización de datos.",
+    status: "Lucero Bocanegra",
+  },  
+  {
     role: "Operación de campo",
     focus: "Vuelo del dron.",
-    status: "Will Smith",
+    status: "Will",
   },
 ];
 
