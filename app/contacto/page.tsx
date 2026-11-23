@@ -14,7 +14,7 @@ export default function ContactoPage() {
       <PageHeader
         eyebrow={site.city}
         title="Contacto"
-        lede="El correo y el nombre del grupo son provisionales. El formulario comprueba el mensaje en el servidor y responde en la página; no lo guarda ni lo reenvía."
+        lede="El correo y nombre del grupo. El formulario comprueba el mensaje en el servidor y responde en la página; no lo guarda ni lo reenvía."
       />
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[0.8fr_1.2fr]">
         <aside className="space-y-4 text-sm">
