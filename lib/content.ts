@@ -13,12 +13,12 @@ export const team = [
   },
     {
     role: "Meteorología con drones y química atmosférica",
-    focus: "Perfiles Atmosféricos y análisis químico de partículas finas.",
+    focus: "Perfiles atmosféricos y análisis químico de partículas finas.",
     status: "Leonarddo Lopez",
   },
   {
     role: "Gestor de Datos de drones",
-    focus: "Control de calidad , procesamiento y visualización de datos y manejo de repositorios.",
+    focus: "Control de calidad, procesamiento y visualización de datos y manejo de repositorios.",
     status: "Joaquin Lopez",
   },
   {
