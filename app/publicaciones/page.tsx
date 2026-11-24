@@ -14,7 +14,7 @@ export default function PublicacionesPage() {
       <PageHeader
         eyebrow="Bibliografía"
         title="Publicaciones"
-        lede="Todavía no hay artículos del grupo. Las fichas de abajo muestran el formato —título, autores, medio, año y DOI— para reemplazarlas cuando existan. Los DOI usan el prefijo 10.0000 y no resuelven a un trabajo real."
+        lede="Publicaciones recientes"
       />
       <ul className="mx-auto max-w-6xl space-y-4 px-4 py-10 sm:px-6">
         {publications.map((item) => (
