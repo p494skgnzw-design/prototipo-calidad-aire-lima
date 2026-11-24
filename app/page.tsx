@@ -39,13 +39,13 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <h2 className="text-4xl text-pacific sm:text-5xl">Para qué existe el grupo</h2>
+            <h2 className="text-4xl text-pacific sm:text-5xl">Soluciones Especificas</h2>
             <p className="mt-4 text-pretty text-muted-foreground">
 
               Proveemos información meteorológica detallada y oportuna reducir los impactos de las actividades industriales 
-              y urbanas al medio ambiente y a la salud de los habitantes. Hemos desarrollado un sistema llamado  meteorología digital 
+              y urbanas al medio ambiente y a la salud. Hemos desarrollado un sistema llamado meteorología digital 
               que permite conocer cómo el viento transporta las partículas finas generadas en construcción, chimeneas, fundiciones, 
-              entre otros y que son inhaladas por las personas.
+              entre otros y que son inhaladas por personas.
             </p>
             <p className="mt-3 text-pretty text-muted-foreground">
               Esta web es el prototipo de una meteorología digital. Los números se simulan en el servidor
