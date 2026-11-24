@@ -3,12 +3,12 @@
  * Cambie `name` y `shortName` aquí: el resto del sitio los importa.
  */
 export const site = {
-  name: "Group of Environmental Engineers",
-  shortName: "GREEN",
+  name: "X-Wind",
+  shortName: "X-wind",
   city: "Lima, Perú",
-  email: "contacto@green.com.pe",
+  email: "contacto@xwind.com.pe",
   description:
-    "Grupo de ingenieros ambientales que usan drones para sensar la atmosferá metro a metro, capturan particulas finas y las analizan en laboratorio, y modelan los vientos para estudiar a detalle la dinámica de la atmosféra y la calidad del aire en Perú",
+    "Caracterizamos la atmósfera con mediciones y modelos atmosféricos, y analizamos particulas finas para determinar la calidad del aire en Perú",
   disclaimer: "Datos preliminares, sin validar",
   drone: {
     id: "gia-d1",
