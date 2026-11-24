@@ -19,7 +19,7 @@ export function SiteHeader() {
   const open = menuPath === pathname;
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/80 bg-card/90 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-border/80 bg-background/95 backdrop-blur-md">
       <div className="h-px bg-white/80" />
       <div className="flex w-full items-center gap-6 px-4 py-3 sm:gap-10 sm:px-8 lg:px-10">
         <Link href="/" className="flex shrink-0 items-center gap-2.5">
@@ -43,7 +43,7 @@ export function SiteHeader() {
                   "px-1 py-1.5 text-center text-[12px] font-bold tracking-[0.06em] whitespace-nowrap text-foreground uppercase hover:text-white",
                   current && item.href !== "/datos" && "text-white underline decoration-white/80 underline-offset-8",
                   item.href === "/datos" && "rounded-full bg-primary px-3 text-primary-foreground hover:text-primary-foreground",
-                  current && item.href === "/datos" && "ring-2 ring-white ring-offset-2 ring-offset-black",
+                  current && item.href === "/datos" && "ring-2 ring-white ring-offset-2 ring-offset-[#3a3a3c]",
                 )}
               >
                 {item.label}
