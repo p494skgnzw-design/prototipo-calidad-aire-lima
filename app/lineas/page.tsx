@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Líneas de investigación",
-  description: `Drones, sensores y calidad del aire urbano en la red piloto de ${site.shortName}.`,
+  description: `Mediciones y modelos para determinar la calidad del aire en ${site.shortName}.`,
 };
 
 export default function LineasPage() {
