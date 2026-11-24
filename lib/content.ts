@@ -37,26 +37,26 @@ export const lines = [
   {
     id: "drones",
     numeral: "01",
-    title: "Drones y perfiles verticales",
+    title: "Perfiles atmosféricos con Drones",
     summary:
-      "Un transecto entre la Costa Verde y Ate, con ascensos y descensos en los primeros 200 metros.",
-    body: "Como el viento transporta el material particulado. El dron de este prototipo recorre un circuito Miraflores–San Isidro–San Borja–La Molina–Ate y vuelve por Surco y Barranco. La altitud oscila entre unos 55 m y 200 m, dos veces por vuelta, para un perfil vertical a lo largo del mismo recorrido horizontal. La velocidad que se ve en el mapa está acelerada, para que el movimiento sea visible; un multirrotor de campaña iría cerca de 12 m/s.",
+      "Sensamos la atmosfera metro a metro.",
+    body: "Medimos la temperatura, presión, humedad relativa y vector de vientos. La velocidad que se ve en el mapa está acelerada, para que el movimiento sea visible; un multirrotor de campaña iría cerca de 12 m/s.",
   },
   {
-    id: "sensores",
+    id: "quimica",
     numeral: "02",
-    title: "Sensores meteorológicos y captura de partículas finas",
+    title: "Química de partículas finas",
     summary:
-      "Temperatura, presión y humedadad relativa, vector de vientos y partículas finas",
-    body: "El ozono en Lima suele subir hacia el mediodía, cuando hay sol, y el dióxido de nitrógeno acompaña el tráfico de la mañana y de la tarde. La humedad alta de la costa importa porque cambia cómo se comportan los sensores de bajo costo. Este prototipo genera esas variables con un ciclo diurno plausible. No hay calibración contra un instrumento de referencia: eso queda como trabajo de campo, no como un resultado de esta página.",
+      "Caracterización fisico-química de las partículas finas capturadas con drones",
+    body: "Se analizan las partículas finas con metodos químicos en busca de contaminantes ambientales, entre ellos metales pesados.",
   },
   {
     id: "aire",
     numeral: "03",
-    title: "Calidad del aire urbano",
+    title: "Modelamiento de la Calidad del Aire",
     summary:
-      "Ocho puntos fijos, del Callao a Ate y de Carabayllo a Villa María del Triunfo.",
-    body: "La red piloto contrasta la costa, el centro, el puerto y los distritos del este y del norte, donde el polvo y el tráfico pesan más. El color de cada estación es un índice orientativo calculado con PM2.5 y PM10 de los últimos minutos, con los puntos de corte habituales del ICA. No es el índice oficial de 24 horas del Ministerio del Ambiente, ni un aviso sanitario. Sirve para ver, en el mismo reloj, qué distrito está más cargado.",
+      "Un modelo atmosférico con información de las mediciones para determinar la calidad del aire",
+    body: "La meteorología y las partículas son introducidas a un modelo atmosférico de alta resolución para determinar la calidad del aire a nivel de edificios",
   },
 ];
 
@@ -88,11 +88,11 @@ export const projects = [
 
 export const publications = [
   {
-    title: "Modelo LES CM1",
-    authors: "Autor/a, A.; Autor/a, B.",
-    venue: "Revista por confirmar",
-    year: 2026,
-    doi: "10.0000/gia.ejemplo.0001",
+    title: "Simulating Stratiform Precipitation With Embedded Convection in High‐Elevation Valleys Using LES: The Role of Topographic Detail",
+    authors: "Steven Paul Chavez ; Jose Luis Flores Rojas ; Ken Takahashi ; and Fey Yamina Silva",
+    venue: "Journal of Geophysical Research: Atmospheres",
+    year: 2025,
+    doi: "10.1029/2025JD043696",
     example: true,
   },
   {
