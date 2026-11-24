@@ -22,7 +22,7 @@ npm run start
 
 Copie [`.env.example`](.env.example) a `.env.local` si quiere un token de ingesta o otro intervalo.
 
-El video de la portada es el archivo `public/video/vuelo-drone.mp4`. Al subirlo desde el navegador, GitHub solo acepta archivos de menos de 25 MB. Conviene un MP4 en H.264, a 720p. En el repositorio: **Add file → Upload files**, entra en la carpeta `public/video` y sube el mp4 con ese nombre exacto.
+El logo de la barra es el archivo `public/logo.jpeg`. El video de la portada es el archivo `public/video/vuelo-drone.mp4`. Al subirlo desde el navegador, GitHub solo acepta archivos de menos de 25 MB. Conviene un MP4 en H.264, a 720p. En el repositorio: **Add file → Upload files**, entra en la carpeta `public/video` y sube el mp4 con ese nombre exacto.
 
 La copia pública está en GitHub Pages: [p494skgnzw-design.github.io/prototipo-calidad-aire-lima](https://p494skgnzw-design.github.io/prototipo-calidad-aire-lima/). Ahí el navegador calcula la simulación. La ingesta de sensores (`POST /api/ingest`) solo existe cuando el sitio corre con `npm run dev` o `npm run start`.
 
