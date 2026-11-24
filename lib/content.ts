@@ -62,27 +62,25 @@ export const lines = [
 
 export const projects = [
   {
-    title: "Red piloto de ocho estaciones",
-    status: "En este prototipo",
-    summary:
-      "Estaciones fijas en Centro de Lima, Miraflores, San Borja, Ate, Callao, San Juan de Lurigancho, Villa María del Triunfo y Carabayllo. Cada una reporta seis variables y un índice orientativo.",
+    title: "Calidad del aire en Mi Peru, Callao",
+    status: "Prototipo 1",
+    summary: "Despliegue del sistema de mediciones Condor 1.",
   },
   {
-    title: "Transecto con dron costa–este",
-    status: "En este prototipo",
+    title: "Dinámica de los vientos, San Miguel, Lima",
+    status: "Prototipo 2",
     summary:
-      "Vuelo simulado sobre el gradiente entre el Pacífico y Ate, con el trayecto reciente coloreado según PM2.5 y la altitud a la vista.",
+      "Despliegue del sistema de mediciones Condor 2.",
   },
   {
-    title: "Ingesta para sensores reales",
-    status: "Listo para conectar",
-    summary: `El mismo mapa puede dejar de simular una estación cuando llegan lecturas a POST /api/ingest. El puente MQTT de ejemplo publica en ese contrato. El nombre del grupo, cuando se decida, se cambia solo en la configuración de ${site.shortName}.`,
+    title: "Incendios Forestales, Paruro, Cusco",
+    status: "Prototipo 3",
+    summary: "Despliegue del sistema de mediciones Condor 3",
   },
   {
-    title: "Comparación con un método de referencia",
-    status: "Paso siguiente",
-    summary:
-      "Colocar un sensor junto a una estación de referencia, durante varias semanas, y corregir el sesgo. Este sitio no hace esa corrección y no debe leerse como dato validado.",
+    title: "Cenizas Volcanicas, Yura, Arequipa",
+    status: "Prototipo 4",
+    summary: "Despliegue del sistema de mediciones Condor 4",
   },
 ];
 
