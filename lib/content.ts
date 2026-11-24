@@ -114,8 +114,8 @@ export const publications = [
 export const parameters = [
   { name: "PM2.5", unit: "µg/m³", why: "Partículas finas, las que más pesan en el índice." },
   { name: "PM10", unit: "µg/m³", why: "Incluye polvo más grueso, frecuente al este y al norte." },
-  { name: "O3", unit: "µg/m³", why: "Ozono. En el modelo sube hacia el mediodía." },
-  { name: "NO2", unit: "µg/m³", why: "Dióxido de nitrógeno, ligado al tráfico." },
-  { name: "Temperatura", unit: "°C", why: "Marca el ciclo diurno y baja con la altitud del dron." },
-  { name: "Humedad relativa", unit: "%", why: "Alta en la costa y de noche; relevante para el sensor." },
+  { name: "u,v,w", unit: "m/s", why: "Vector de viento. Los vientos son dinámicos cambian minuto a minuto." },
+  { name: "Presión", unit: "Pa", why: "Presión atmosférica a distintas alturas." },
+  { name: "Temperatura", unit: "°C", why: "Temperatura a distintas alturas asociada a la estabilidad atmosférica." },
+  { name: "Humedad relativa", unit: "%", why: "La humedad relativa a distintas alturas indica el potencial de formación de nubes" },
 ];
