@@ -44,13 +44,13 @@ export default function HomePage() {
 
               Proveemos información meteorológica detallada y oportuna reducir los impactos de las actividades industriales 
               y urbanas al medio ambiente y a la salud. Hemos desarrollado un sistema llamado meteorología digital 
-              que permite conocer cómo el viento transporta las partículas finas generadas en construcción, chimeneas, fundiciones, 
+              que permite conocer cómo el viento transporta partículas finas contaminantes generadas en construcción, chimeneas, fundiciones, 
               entre otros y que podria ser inhaladas por personas.
             </p>
             <p className="mt-3 text-pretty text-muted-foreground">
               Esta web es el prototipo de una meteorología digital. Los números se simulan en el servidor
-              para poder diseñar la red, el mapa y la ingesta antes de tener instrumentos en la
-              azotea. Cuando lleguen las mediciones y salidas de los modelos, su lectura reemplaza a la simulada.
+              para poder diseñar la red, el mapa y la ingesta antes de tener instrumentos en puntos de monitoreo. 
+              Cuando lleguen las mediciones y salidas de los modelos, su lectura reemplaza a la simulada.
             </p>
           </div>
           <dl className="grid grid-cols-2 gap-3">
