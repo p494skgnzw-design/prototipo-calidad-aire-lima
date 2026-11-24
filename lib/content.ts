@@ -55,7 +55,7 @@ export const lines = [
     numeral: "03",
     title: "Modelamiento de la Calidad del Aire",
     summary:
-      "Un modelo atmosférico con información de las mediciones para determinar la calidad del aire",
+      "Un modelo atmosférico de resolución espacial de metros para determinar la calidad del aire",
     body: "La meteorología y las partículas son introducidas a un modelo atmosférico de alta resolución para determinar la calidad del aire a nivel de edificios",
   },
 ];
